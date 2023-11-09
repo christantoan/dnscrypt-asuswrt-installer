@@ -176,12 +176,12 @@ check_dnscrypt_toml() {
 }
 
 check_dns_environment() {
-	if [ -f "/opt/etc/init.d/S61stubby" ] || [ -f "/opt/sbin/stubby" ] || [ -f "/opt/bin/install_stubby" ] || [ -f "/jffs/scripts/install_stubby.sh" ] || [ -d "/jffs/addons/AdGuardHome.d" ]; then
-		PTXT "$ERROR Potential stubby or adguardhome installation detected." \
-			"$ERROR Please remove before attempting to continue." \
-			"$ERROR Exiting..."
-		exit 1
-	fi
+#	if [ -f "/opt/etc/init.d/S61stubby" ] || [ -f "/opt/sbin/stubby" ] || [ -f "/opt/bin/install_stubby" ] || [ -f "/jffs/scripts/install_stubby.sh" ] || [ -d "/jffs/addons/AdGuardHome.d" ]; then
+#		PTXT "$ERROR Potential stubby or adguardhome installation detected." \
+#			"$ERROR Please remove before attempting to continue." \
+#			"$ERROR Exiting..."
+#		exit 1
+#	fi
 	local NVCHECK
 	NVCHECK="0"
 	if [ "$(nvram get dnspriv_enable)" != "0" ]; then
