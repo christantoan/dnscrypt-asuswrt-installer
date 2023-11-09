@@ -24,17 +24,17 @@ To resolve all problems associated with installing Dnscrypt-Proxy with Entware (
 - Support for addition of multiple static servers using SDNS Stamp and Custom Server Naming that can be mixed with servers on the resolvers list.
 - Improved Installer/Update/Backup Functions.
 # Changelog:
-https://github.com/thuantran/dnscrypt-asuswrt-installer/commits/master
+https://github.com/christantoan/dnscrypt-asuswrt-installer/commits/master
 # Install/Update/Reconfig/Uninstall:
 Run this command from ssh shell and following the prompt for dnscrypt-proxy version 2:
 ```
-curl -L -s -k -O https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/master/installer && sh installer; rm installer
+curl -L -s -k -O https://raw.githubusercontent.com/christantoan/dnscrypt-asuswrt-installer/master/installer && sh installer; rm installer
 ```
 User can safely update from dnscrypt-proxy version 1 to version 2 with above command.
 
 If you want to use dnscrypt-proxy version 1, run this command:
 ```
-curl -L -s -k -O https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/dnscrypt-proxy-v1/installer && sh installer dnscrypt-proxy-v1; rm installer
+curl -L -s -k -O https://raw.githubusercontent.com/christantoan/dnscrypt-asuswrt-installer/dnscrypt-proxy-v1/installer && sh installer dnscrypt-proxy-v1; rm installer
 ```
 # Terminal commands to for Dnscrypt-Proxy are:
 ```
@@ -83,6 +83,6 @@ I also need following information:
 - Use dnscrypt-proxy binary packages from https://github.com/jedisct1/dnscrypt-proxy
 - Compiling and stripping required binaries using firmware building toolchain from asuswrt-merlin
 - I wrote the installer script with stuff inspired from entware-setup.sh from asuswrt-merlin
-- You can look at all the stuff here https://github.com/thuantran/dnscrypt-asuswrt-installer
+- You can look at all the stuff here https://github.com/christantoan/dnscrypt-asuswrt-installer
 # Donate:
-This script will always be open source and free to use under [GPL-3.0 License](https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/master/LICENSE), but if you want to support future development you can do so by [Donating With PayPal.](https://paypal.me/swotrb)
+This script will always be open source and free to use under [GPL-3.0 License](https://raw.githubusercontent.com/christantoan/dnscrypt-asuswrt-installer/master/LICENSE), but if you want to support future development you can do so by [Donating With PayPal.](https://paypal.me/swotrb)
