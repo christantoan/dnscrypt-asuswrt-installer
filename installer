@@ -1842,13 +1842,13 @@ write_manager_script() {
 
 [ "$1" ] && BRANCH="$1" || BRANCH="master"
 [ -z "$(nvram get odmpid)" ] && ROUTER_MODEL="$(nvram get productid)" || ROUTER_MODEL="$(nvram get odmpid)"
-RURL="https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/${BRANCH}"
-URL_GEN="https://raw.githubusercontent.com/thuantran/dnscrypt-asuswrt-installer/${BRANCH}/gen"
+RURL="https://raw.githubusercontent.com/christantoan/dnscrypt-asuswrt-installer/${BRANCH}"
+URL_GEN="https://raw.githubusercontent.com/christantoan/dnscrypt-asuswrt-installer/${BRANCH}/gen"
 ROUTER_OS="$(uname)"
 ROUTER_ARCH="$(uname -m)"
 
 [ -z "$ROUTER_MODEL" ] && PTXT "$ERROR This is an unsupported router, sorry." && sleep 3 && exit 1
-[ "$(nvram get sw_mode)" != "1" ] && PTXT "$ERROR You are not running in router mode, sorry." && sleep 3 && exit 1
+#[ "$(nvram get sw_mode)" != "1" ] && PTXT "$ERROR You are not running in router mode, sorry." && sleep 3 && exit 1
 
 if [ -z "$2" ]; then
 	printf '\e[8;50;125t'
